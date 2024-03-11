@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+}
+body{
+  background: black;
+}
+.parallax{
+  min-height: 75vh;
+  display: grid;
+  grid-template-areas: "stack";
+  position: relative;
+  z-index: 0;
+}
+.parallax > * {
+  grid-area: stack;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+.parallax img{
+  width: 100%;
+}
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 50px));
+  }
+}
+.land{
+  z-index: 2;
+  position: absolute;
+  top: 40%;
+  --parallax-speed: -7;
+}
+.land2{
+  z-index: 5;
+  top: 55%;
+  position: absolute;
+  --parallax-speed: -5;
+}
+.branch{
+  position: absolute;
+  z-index: 5;
+  --parallax-speed: -3;
+}
+.hero-title{
+  position: absolute;
+  left: 35%;
+  top: 15%;
+  font-size: 6rem;
+  font-family: arial, sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.sky{
+  position: absolute;
+  --parallax-speed: -10;
+}
+.wrapper{
+  --parallax-speed: 20;
+  z-index: 3;
+}
+.main-content{
+  width: 100%;
+  height: 400px;
+
+  background: #000000;
+  background: linear-gradient(to bottom, #000000 54%, #0C2C53 93%);
+}
+  /* .earth{
+  width: 70%;
+  position: absolute;
+  top: 95%;
+  left: 14%;
+  animation: earth linear;
+  animation-timeline: view();
+  transform: translateX(0)
+}
+@keyframes earth {
+  100%{
+    transform: rotate(180deg);
+  }
+}   */
+
+/* @keyframes rollAndMove {
+  0% {
+    transform: rotate(0deg) translateX(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100%);
+  }
+}  */
+
+
+.parallax-two{
+  min-height: 75vh;
+  display: grid;
+  grid-template-areas: "stack";
+  position: relative;
+  z-index: 0;
+  margin-top: 10px;
+}
+.parallax-two > * {
+  grid-area: stack;
+  animation: parallax-two linear;
+  animation-timeline: scroll();
+}
+.parallax-two img{
+  width: 100%;
+}
+@keyframes parallax-two {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 50px));
+  }
+}
+.m12{
+  position: absolute;
+  z-index: 4;
+  top: 40%;
+  --parallax-speed: -3;
+}
+.m11{
+  position: absolute;
+  top: 75%;
+  z-index: 3;
+  --parallax-speed: -6;
+
+}
+.night-sky{
+  z-index: 1;
+  position: absolute;
+  --parallax-speed: -8;
+
+}
+.hero-title2{
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  top: 15%;
+  font-size: 5rem;
+  color: #fff;
+  font-family: arial, sans-serif;
+  font-weight: 800;
+  color: #143666;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.wrapper-two{
+  z-index: 4;
+  --parallax-speed: 4;
+}
+.main-content2{
+  width: 100%;
+  height: 200px;
+  /* background: #044F1A;
+background: linear-gradient(to bottom, #044F1A 27%, #000000 93%); */
+background: #0C2C53;
+background: linear-gradient(to bottom, #0C2C53 79%, #8CBCCC 100%);
+
+
+
+}
+.car{
+  width: 30%;
+  position: absolute;
+  animation: car linear;
+  animation-timeline: view();
+  transform: translateX(-1000px);
+}
+@keyframes car {
+  100%{
+    transform: translateX(3500px);
+  }
+}
+.parallax-three{
+  min-height: 75vh;
+  display: grid;
+  grid-template-areas: "stack";
+  position: relative;
+  z-index: 0;
+  margin-top: 10px;
+}
+.parallax-three > * {
+  grid-area: stack;
+  animation: parallax-three linear;
+  animation-timeline: scroll();
+}
+.parallax-three img{
+  width: 100%;
+}
+@keyframes parallax-three {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 50px));
+  }
+}
+.f3{
+  position: absolute;
+  top: 100%;
+  z-index: 3;
+  --parallax-speed: -10;
+}
+.f1{
+  position: absolute;
+  z-index: 1;
+  --parallax-speed: ;
+}
+.f2{
+  position: absolute;
+  z-index: 2;
+  --parallax-speed: -2;
+}
+.hero-title3{
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  top: 15%;
+  font-size: 5rem;
+  color: #fff;
+  font-family: arial, sans-serif;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.wrapper-three{
+  z-index: 3;
+  --parallax-speed: 6;
+}
